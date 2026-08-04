@@ -1,7 +1,14 @@
-export type Inovices ={
+export type Invoice = {
     id: string;
     customer_id: string;
     amount: number;
     date: string;
-    status: 'pending'|'paid';
+    status: 'pending' | 'paid';
+};
+
+export type Customer = {
+    id: string;
+    name: string;
+    email: string;
+    company?: string;
 };
